@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+const previsao = ["Segunda: 25°C", "Terça: 28°C", "Quarta: 26°C", "Quinta: 24°C", "Sexta: 27°C", "Sábado: 29°C", "Domingo: 30°C"];
+
+const escolhaDia = prompt('Escolha um dia para ver a previsão: \n0.Segunda\n1.Terça\n2.Quarta\n3.Quinta\n4.Sexta\n5.Sábado\n6.Domingo');
+
+if(escolhaDia > 6 || escolhaDia < 0|| isNaN(escolhaDia)){
+  alert('Numero invalido');
+
+}else{
+switch (escolhaDia) {
+        case '0':
+            let slice = previsao.slice(0,1);
+            alert(slice);
+            break;
+        case '1':
+            let slice1 = previsao.slice(1,2);
+            alert(slice1);
+            break;
+        case '2':
+            let slice2 = previsao.slice(2,3);
+            alert(slice2);
+            break;
+        case '3':
+            let slice3 = previsao.slice(3,4);
+            alert(slice3);
+            break;
+        case '4':
+            let slice4 = previsao.slice(4,5);
+            alert(slice4);
+            break;
+        case '5':
+            let slice5 = previsao.slice(5,6);
+            alert(slice5);
+            break;
+        case '6':
+            let slice6 = previsao.slice(6,7);
+            alert(slice6);
+            break;
+    }};
+'   '
+    </script>
+</body>
+
+</html>
